@@ -59,7 +59,6 @@ function validateField(input) {
       input.dataset.message = "Passwords do not match.";
     }
   }
-
   // Apply color feedback
   if (isValid) {
     input.classList.add("valid");
@@ -95,7 +94,6 @@ form.addEventListener("submit", (e) => {
     );
     return;
   }
-
   // If all good — save username and show success message
   localStorage.setItem("registeredUsername", username.value.trim());
   alert(`Registration successful!\nWelcome, ${username.value}!`);
